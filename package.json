@@ -1,0 +1,24 @@
+{
+  "name": "aws-cdk-pipeline",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "aws-cdk": "2.17.0",
+    "@types/node": "10.17.27",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.17.0",
+    "constructs": "^10.0.0"
+  }
+}
