@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
+import { Tags } from 'aws-cdk-lib';
 import { MyPipelineStack } from './stack/my-pipeline-stack';
 
 const app = new cdk.App();
@@ -11,4 +12,4 @@ new MyPipelineStack(app, 'pipeline-of-cdk-project-stack', {
   description: 'Pipeline of the demo CDK project aws-cdk-pipeline',
 });
 
-app.synth();
+Tags.of(app).add('app', 'demo');
