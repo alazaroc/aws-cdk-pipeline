@@ -6,6 +6,9 @@ export class MyPipelineAppStage extends Stage {
   constructor(scope: Construct, id: string, props?: StageProps) {
     super(scope, id, props);
 
-    const iaCStack = new MyIaCStack(this, 'iacStack');
+    const iaCStack = new MyIaCStack(this, 'iac-example-stack', {
+      description:
+        'Stack created with codepipeline in the example aws-cdk-pipeline',
+    });
   }
 }
